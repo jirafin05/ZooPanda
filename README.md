@@ -1,2 +1,2 @@
 # BlogCafé
-Pagina prueba
+BlogCafé
