@@ -4,100 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <title>Tienda de Ropa</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Freelancer</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83eece467c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logotipo">
+    <header class="site-header">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
     </header>
 
-    <div class="contenedor">
-        <div class="hero">
-            <img src="img/hero.jpg" alt="Imagen Principal">
+    <div class="hero">
+        <div class="contenedor-hero">
+            <h1>Diseño y Desarrollo Freelancer</h1>
+            <p> <i class="fas fa-map-marker-alt"></i> Saénz Peña, Chaco</p>
+            <a href="#" class="boton">Contactar</a>
         </div>
+    </div>
 
+    <div class="contenedor">
+        <main class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="contenedor-servicios">
+                <div class="servicio">
+                    <h3>Diseño Web</h3>
+                    <div class="iconos">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <p>Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.</p>
+                </div>
 
-        <main>
-            <h1>Nuestros Productos</h1>
+                <div class="servicio">
+                    <h3>Aplicaciones Móbiles</h3>
+                    <div class="iconos">
+                        <i class="fab fa-android"></i>
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <p>Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.</p>
+                </div>
 
-            <ul class="lista-productos">
-                <li>
-                    <img src="img/1.jpg" alt="">
-                    <p>VueJS <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/2.jpg" alt="">
-                    <p>Angular <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/3.jpg" alt="">
-                    <p>React <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/4.jpg" alt="">
-                    <p>Redux <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/5.jpg" alt="">
-                    <p>node.js <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/6.jpg" alt="">
-                    <p>SASS <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/7.jpg" alt="">
-                    <p>HTML5 <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/8.jpg" alt="">
-                    <p>GitHub <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/9.jpg" alt="">
-                    <p>Bulma CSS <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/10.jpg" alt="">
-                    <p>TypeScript <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/11.jpg" alt="">
-                    <p>Drupal <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-
-                <li>
-                    <img src="img/12.jpg" alt="">
-                    <p>JavaScript <span class="precio">$25</span></p>
-                    <a href="#" class="boton">Comprar</a>
-                </li>
-            </ul>
-
+                <div class="servicio">
+                    <h3>Social Media</h3>
+                    <div class="iconos">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <p>Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.</p>
+                </div>
+            </div>
         </main>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <h3>Contáctanos llenando todos los campos </h3>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+
+                    <div class="campo w-100">
+                        <label>Correo Electronico</label>
+                        <input type="email" name="nombre" placeholder="Correo Electronico">
+                    </div>
+
+                    <div class="campo w-100">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" class="boton" value="enviar">
+                </div>
+            </form>
+        </section>
     </div>
 </body>
 
