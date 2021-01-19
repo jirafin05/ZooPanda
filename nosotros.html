@@ -4,91 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices </title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Store - CSS Grid</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <div class="mobile-menu">
-                    <a href="#navegacion">
-                        <img src="img/barras.svg" alt="Icono Menú">
-                    </a>
-                </div>
 
-                <nav id="navegacion" class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </div>
+    <header class="site-header">
+        <img src="img/logo.png" alt="LogoTipo">
     </header>
 
+    <div class="barra">
+        <nav class="navegacion">
+            <a href="index.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+        </nav>
+    </div>
+
     <main class="contenedor">
-        <h1 class="fw-300 centrar-texto">Conoce Sobre Nosotros</h1>
-        <div class="contenido-nosotros">
-            <div class="imagen">
-                <img src="img/nosotros.jpg" alt="">
-            </div>
+        <h1>Sobre Nosotros</h1>
+        <div class="contenedor-informacion">
             <div class="texto-nosotros">
-                <blockquote>25 Años de Experiencia</blockquote>
-                <p>
-                    Vestibulum eu lobortis nibh. Maecenas lorem purus, euismod vitae orci a, ultricies molestie velit. Nam et pharetra diam. Cras efficitur, felis quis elementum vulputate, quam ex pharetra augue, sed dictum arcu risus nec sapien. Pellentesque habitant morbi
-                    tristique senectus et netus et malesuada fames ac turpis egestas. Praesent aliquam tortor id cursus gravida. Integer pharetra eget sem sit amet sodales. In volutpat, nunc ac eleifend elementum, diam sem vestibulum dolor, vitae vestibulum
-                    justo nibh nec felis. Suspendisse vel magna ut ipsum pellentesque fermentum.
-                </p>
-                <p>
-                    Maecenas enim ante, feugiat nec lectus eget, scelerisque faucibus ligula. Pellentesque sodales dapibus mi vel hendrerit. Proin venenatis porta semper. Vivamus eleifend risus vitae turpis gravida, non hendrerit libero tincidunt. Suspendisse vitae blandit
-                    mi, vel ornare lorem. Phasellus ut viverra sapien. Etiam vehicula sapien imperdiet sapien feugiat eleifend.
-                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros velit, tempus in ultrices id, tristique non velit. Aenean id ullamcorper velit. Aenean bibendum in diam tincidunt efficitur. Nam eget bibendum orci. In hac habitasse platea
+                    dictumst. Morbi rhoncus non elit id vehicula. Donec consectetur consequat sem sit amet euismod. Phasellus viverra sem ac luctus elementum. </p>
+                <p>Maecenas a dolor est. Etiam bibendum, libero id auctor cursus, tellus arcu venenatis lacus, at sodales diam ante eu nunc. Cras nulla magna, vulputate ac gravida quis, dictum a nisi. Vestibulum eleifend elit sit amet finibus obortis in.
+                    Fusce in tempor quam. Praesent accumsan nisi sed purus pharetra, feugiat pellentesque lacus faucibus.</p>
             </div>
+            <img src="img/nosotros.jpg" alt="">
         </div>
     </main>
 
-    <section class="contenedor seccion">
-        <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
-        <div class="icono-nosotros">
-            <div class="icono">
-                <img src="img/icono1.svg" alt="Icono Seguridad">
-                <h3>Seguridad</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto maiores maxime alias. Reiciendis officia perspiciatis ipsam veritatis tempore non recusandae, perferendis ipsa doloremque est corrupti sed consequuntur, fuga, velit nulla.</p>
-            </div>
-
-            <div class="icono">
-                <img src="img/icono2.svg" alt="Icono Mejor Precio">
-                <h3>El Mejor Precio</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto maiores maxime alias. Reiciendis officia perspiciatis ipsam veritatis tempore non recusandae, perferendis ipsa doloremque est corrupti sed consequuntur, fuga, velit nulla.</p>
-            </div>
-
-            <div class="icono">
-                <img src="img/icono3.svg" alt="A tiempo">
-                <h3>A tiempo</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto maiores maxime alias. Reiciendis officia perspiciatis ipsam veritatis tempore non recusandae, perferendis ipsa doloremque est corrupti sed consequuntur, fuga, velit nulla.</p>
-            </div>
-        </div>
-    </section>
-
-
-
-    <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
-        </div>
+    <footer class="footer">
+        <p class="copyright">Front-End-Store Todos los derechos reservados &copy; 2019</p>
     </footer>
 </body>
 

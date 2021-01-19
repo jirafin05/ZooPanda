@@ -3,99 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Freelancer</title>
+    <title>Front End Store - CSS Grid</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/83eece467c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 
 <body>
     <header class="site-header">
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
-        </nav>
+        <img src="img/logo.png" alt="LogoTipo">
     </header>
 
-    <div class="hero">
-        <div class="contenedor-hero">
-            <h1>Diseño y Desarrollo Freelancer</h1>
-            <p> <i class="fas fa-map-marker-alt"></i> Saénz Peña, Chaco</p>
-            <a href="#" class="boton">Contactar</a>
-        </div>
+    <div class="barra">
+        <nav class="navegacion">
+            <a href="index.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+        </nav>
     </div>
 
-    <div class="contenedor">
-        <main class="servicios">
-            <h2>Nuestros Servicios</h2>
-            <div class="contenedor-servicios">
-                <div class="servicio">
-                    <h3>Diseño Web</h3>
-                    <div class="iconos">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <p>Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.</p>
-                </div>
+    <main>
+        <h1>Nuestros Productos</h1>
+        <div class="lista-productos contenedor">
 
-                <div class="servicio">
-                    <h3>Aplicaciones Móbiles</h3>
-                    <div class="iconos">
-                        <i class="fab fa-android"></i>
-                        <i class="fab fa-apple"></i>
-                    </div>
-                    <p>Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.</p>
-                </div>
-
-                <div class="servicio">
-                    <h3>Social Media</h3>
-                    <div class="iconos">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <p>Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.</p>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/1.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">VueJs</p>
+                    <p class="precio">$25</p>
                 </div>
             </div>
-        </main>
-
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <form action="#">
-                <h3>Contáctanos llenando todos los campos </h3>
-
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre">
-                    </div>
-
-                    <div class="campo">
-                        <label>Teléfono</label>
-                        <input type="tel" name="telefono" placeholder="Teléfono">
-                    </div>
-
-                    <div class="campo w-100">
-                        <label>Correo Electronico</label>
-                        <input type="email" name="nombre" placeholder="Correo Electronico">
-                    </div>
-
-                    <div class="campo w-100">
-                        <label>Mensaje</label>
-                        <textarea></textarea>
-                    </div>
+            <!---Cierre Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/2.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">Angular</p>
+                    <p class="precio">$25</p>
                 </div>
-
-                <div class="enviar">
-                    <input type="submit" class="boton" value="enviar">
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/3.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">React</p>
+                    <p class="precio">$25</p>
                 </div>
-            </form>
-        </section>
-    </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/4.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">Redux</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/5.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">NodeJs</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/6.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">SASS</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/7.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">HTML5</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/8.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">GitHub</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/9.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">BULMA CSS</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/10.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">TypeScript</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/11.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">Drupal</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/12.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">JavaScript</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/13.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">Graphql</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+                    <img src="img/14.jpg" alt="producto">
+                </a>
+                <div class="contenido-producto">
+                    <p class="titulo">WordPress</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+            <div class="graficos grafico-1"></div>
+            <div class="graficos grafico-2"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">Front-End-Store Todos los derechos reservados &copy; 2019</p>
+    </footer>
 </body>
 
 </html>
