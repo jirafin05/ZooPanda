@@ -150,6 +150,10 @@ h3{
   background-color: #ffffff;
   color: #fe4918;
 }
+.boton.transparente{
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
 ul{
   list-style: none;
   margin: 0;
@@ -668,15 +672,61 @@ blockquote i{
   text-align: left;
   color: #fe4918;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   padding-top: 20px;
   width: 70%;
   float: right;
+  font-weight: bold;
 }
 .info-testimonial span{
   color: #000000;
   display: block;
   text-transform: none;
+  font-size: 14px;
+}
+
+/* Newsletter */
+
+.newsletter{
+  position: relative;
+  height: auto;
+}
+
+.newsletter::before{
+  background-image: url(../img/bg-newsletter.jpg);
+  content: '';
+}
+
+.newsletter .contenido{
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.contenido p{
+  font-size: 1.8rem;
+}
+
+.contenido h3{
+  font-size: 7rem;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* Cuenta regresiva */
+.cuenta-regresiva ul li{
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .cuenta-regresiva ul li{
+    float: left;
+    width: 25%;
+  }
 }
 /* ==========================================================================
    Helper classes
