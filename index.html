@@ -1,168 +1,289 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Front End Store - CSS Grid</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+
+    <!-- Add your site or application content here -->
+
     <header class="site-header">
-        <img src="img/logo.png" alt="LogoTipo">
+        <div class="hero">
+            <div class="contenido-header">
+                <nav class="redes-sociales">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </nav>
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"><i class="far fa-calendar-alt"></i> 21-01-2020</p>
+                        <p class="ciudad"><i class="fas fa-map-marker-alt"></i> SP - CHACO</p>
+                    </div>
+                    <h1 class="nombre-sitio">JNM - Web</h1>
+                    <p class="slogan">La mejor pagina web de <span>Argentina</span></p>
+                </div>
+                <!--Informacion Evento-->
+            </div>
+        </div>
+        <!--hero-->
     </header>
 
     <div class="barra">
-        <nav class="navegacion">
-            <a href="index.html">Tienda</a>
-            <a href="nosotros.html">Nosotros</a>
-        </nav>
+
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logotipo">
+            </div>
+
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="navegacion-principal clearfix">
+                <a href="#">Conferencia</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="#">Reservaciones</a>
+            </nav>
+        </div>
+
+    </div>
+    <!--Cierre Barra -->
+
+    <section class="seccion contenedor">
+        <h2 class="">La mejor conferencia de diseño web en español</h2>
+        <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit
+            vehicula. Morbi porttitor tempus euismod.</p>
+    </section>
+    <!--Seccion-->
+
+    <section class="programa">
+        <div class="contenedor-video">
+          <video autoplay muted loop poster="bg-talleres.jpg">
+            <source src="video/video.mp4" type="video/mp4">
+              <source src="video/video.webm" type="video/webm">
+                <source src="video/video.ogv" type="video/ogv">
+          </video> <!--Contenedor-Video-->
+        </div>
+
+        <div class="contenido-programa">
+          <div class="contenedor">
+            <div class="programa-evento">
+              <h2>Programa del evento</h2>
+              <nav class="menu-programa">
+                <a href="#talleres"><i class="fas fa-code"></i> Talleres</a>
+                <a href="#conferencias"><i class="fas fa-comment"></i> Conferencias</a>
+                <a href="#seminarios"><i class="fas fa-university"></i> Seminarios</a>
+              </nav>
+
+              <div id="talleres" class="info-curso ocultar Clearfix">
+                <div class="detalle-evento">
+                  <h3>HTML5, CSS y JavaScript</h3>
+                  <p><i class="far fa-clock"></i> 12:00</p>
+                  <p><i class="far fa-calendar"></i> 22 de enero de 2021</p>
+                  <p><i class="fas fa-user"></i> Juan Manuel Salmón</p>
+                </div>
+
+                <div class="detalle-evento">
+                  <h3>Responsive Web Desing</h3>
+                  <p><i class="far fa-clock"></i> 18:00</p>
+                  <p><i class="far fa-calendar"></i> 22 de enero de 2021</p>
+                  <p><i class="fas fa-user"></i> Juan Manuel Salmón</p>
+                </div>
+                <a href="#" class="boton float-right">Ver Todos</a>
+              </div> <!--Talleres-->
+            </div> <!--Programa evento-->
+          </div> <!--Contenedor-->
+        </div><!--Contenido Programa-->
+    </section> <!--Programa-->
+
+    <section class="invitados contenedor seccion">
+      <h2>Nuestros Invitados</h2>
+      <ul class="lista-invitados clearfix">
+        <li>
+          <div class="invitado">
+            <img src="img/invitado1.jpg" alt="">
+            <p>Rafael Bautista</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitado2.jpg" alt="">
+            <p>Ignacio Garlisi</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitado3.jpg" alt="">
+            <p>Selmar Macarro</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitado4.jpg" alt="">
+            <p>Lucas Scagliotti</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitado5.jpg" alt="">
+            <p>Santi Ortiz</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitado6.jpg" alt="">
+            <p>Jorge Saéz</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="contador parallax">
+      <div class="contenedor">
+        <ul class="resumen-evento clearfix">
+          <li><p class="numero">6</p>Invitados</li>
+          <li><p class="numero">15</p>Talleres</li>
+          <li><p class="numero">3</p>Días</li>
+          <li><p class="numero">9</p>Conferencias</li>
+        </ul>
+      </div>
     </div>
 
-    <main>
-        <h1>Nuestros Productos</h1>
-        <div class="lista-productos contenedor">
+    <section class="precios seccion">
+      <h2>Precios</h2>
+      <div class="contenedor">
+        <ul class="lista-precios">
+          <li>
+            <div class="tabla-precio">
+              <h3>Precio del día</h3>
+              <p class="numero">$30</p>
+              <ul>
+                <li><i class="fas fa-check"></i>Bocadillo Gratis</li>
+                <li><i class="fas fa-check"></i>Todas las conferencias</li>
+                <li><i class="fas fa-check"></i>Todos los talleres</li>
+              </ul>
+              <a href="#" class="boton hollow">COMPRAR</a>
+            </div>
+          </li>
 
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/1.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">VueJs</p>
-                    <p class="precio">$25</p>
-                </div>
+          <li>
+            <div class="tabla-precio">
+              <h3>Todos los dias</h3>
+              <p class="numero">$50</p>
+              <ul>
+                <li><i class="fas fa-check"></i>Bocadillo Gratis</li>
+                <li><i class="fas fa-check"></i>Todas las conferencias</li>
+                <li><i class="fas fa-check"></i>Todos los talleres</li>
+              </ul>
+              <a href="#" class="boton">COMPRAR</a>
             </div>
-            <!---Cierre Producto-->
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/2.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">Angular</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/3.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">React</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/4.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">Redux</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/5.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">NodeJs</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/6.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">SASS</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/7.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">HTML5</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/8.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">GitHub</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/9.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">BULMA CSS</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/10.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">TypeScript</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/11.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">Drupal</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/12.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">JavaScript</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/13.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">Graphql</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="producto.html">
-                    <img src="img/14.jpg" alt="producto">
-                </a>
-                <div class="contenido-producto">
-                    <p class="titulo">WordPress</p>
-                    <p class="precio">$25</p>
-                </div>
-            </div>
-            <div class="graficos grafico-1"></div>
-            <div class="graficos grafico-2"></div>
-        </div>
-    </main>
+          </li>
 
-    <footer class="footer">
-        <p class="copyright">Front-End-Store Todos los derechos reservados &copy; 2019</p>
-    </footer>
+          <li>
+            <div class="tabla-precio">
+              <h3>Precio por Dos dias</h3>
+              <p class="numero">$55</p>
+              <ul>
+                <li><i class="fas fa-check"></i>Bocadillo Gratis</li>
+                <li><i class="fas fa-check"></i>Todas las conferencias</li>
+                <li><i class="fas fa-check"></i>Todos los talleres</li>
+              </ul>
+              <a href="#" class="boton hollow">COMPRAR</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="mapa" class="mapa"></div>
+
+    <section class="seccion">
+      <h2>Testimoniales</h2>
+      <div class="testimoniales contenedor clearfix">
+      <div class="testimonial">
+        <blockquote>
+          <p><i class="fas fa-quote-right"></i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beeen book. It has survived not only five centuries, but also the leap into electronic</p>
+          <footer class="info-testimonial clearfix">
+            <img src="img/testimonial.jpg" alt="Imagen testimonial">
+            <cite>Osvaldo Apontes Cobedo <span>Desarollador en @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div> <!--Testimonial-->
+
+      <div class="testimonial">
+        <blockquote>
+          <p><i class="fas fa-quote-right"></i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beeen book. It has survived not only five centuries, but also the leap into electronic</p>
+          <footer class="info-testimonial clearfix">
+            <img src="img/testimonial.jpg" alt="Imagen testimonial">
+            <cite>Osvaldo Apontes Cobedo <span>Desarollador en @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div> <!--Testimonial-->
+
+      <div class="testimonial">
+        <blockquote>
+          <p><i class="fas fa-quote-right"></i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beeen book. It has survived not only five centuries, but also the leap into electronic</p>
+          <footer class="info-testimonial clearfix">
+            <img src="img/testimonial.jpg" alt="Imagen testimonial">
+            <cite>Osvaldo Apontes Cobedo <span>Desarollador en @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div> <!--Testimonial-->
+      </div>
+    </section>
+
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
