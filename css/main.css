@@ -262,7 +262,7 @@ p.ciudad{
 }
 h1.nombre-sitio{
   font-family: 'PT Sans', sans-serif;
-  font-size: 5.9vw;
+  font-size: 14vw;
   text-transform: uppercase;
 }
 
@@ -728,6 +728,62 @@ blockquote i{
     width: 25%;
   }
 }
+
+/* Footer */
+.site-footer{
+  background-color: #353535;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+
+footer .contenedor > div{
+  color: #ffffff;
+  padding: 0 20px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+@media (min-width: 768px){
+  footer .contenedor > div{
+    width: 33.3%;
+    float: left;
+  }
+}
+
+footer h3{
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+}
+
+footer h3 span{
+  color: #fe4918;
+}
+
+footer .ultimos-tweets li{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+footer p{
+  font-size: 14px;
+}
+
+footer .redes-sociales{
+  text-align: left;
+}
+
+footer p.copy{
+  background-color: #2e2e2e;
+  text-align: center;
+  margin: 0;
+  color: white;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
