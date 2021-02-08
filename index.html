@@ -16,6 +16,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,7 +36,7 @@
                 <nav class="redes-sociales">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://wa.me/#5493644315877" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </nav>
@@ -70,7 +71,7 @@
                 <a href="#">Conferencia</a>
                 <a href="#">Calendario</a>
                 <a href="#">Invitados</a>
-                <a href="#">Reservaciones</a>
+                <a href="registro.html">Reservaciones</a>
             </nav>
         </div>
 
@@ -86,7 +87,7 @@
 
     <section class="programa">
         <div class="contenedor-video">
-          <video autoplay muted loop poster="bg-talleres.jpg">
+          <video autoplay muted loop poster= "bg-talleres.jpg">
             <source src="video/video.mp4" type="video/mp4">
               <source src="video/video.webm" type="video/webm">
                 <source src="video/video.ogv" type="video/ogv">
@@ -185,7 +186,7 @@
     <section class="precios seccion">
       <h2>Precios</h2>
       <div class="contenedor">
-        <ul class="lista-precios">
+        <ul class="lista-precios clearfix">
           <li>
             <div class="tabla-precio">
               <h3>Precio del día</h3>
@@ -285,9 +286,41 @@
       </div>
     </section>
 
+    <footer class="site-footer">
+      <div class="contenedor clearfix">
+        <div class="footer-informacion">
+          <h3>Sobre <span>GDLWEBCAM</span></h3>
+          <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beeen book. It has survived not only five centuries, but also the leap into electroni</p>
+        </div>
+        <div class="ultimos-tweets">
+          <h3>Ultimos <span>Teeets</span></h3>
+          <ul>
+            <li>is simply dummy text of the printing arvived nd typesetting industry.</li>
+            <li>is simply dummy text of the printingrvived  and typesetting industry.</li>
+            <li>is simply dummy text of the printingrvived  and typesetting industry.</li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h3>Redes <span>Sociales</span></h3>
+          <nav class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </nav>
+        </div>
+      </div>
+
+    <p class="copy">Todos los derechos reservados GLDWEBCAM &copy</p>
+
+    </footer>
+
+
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
