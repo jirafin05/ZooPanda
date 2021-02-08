@@ -628,8 +628,11 @@ ul.lista-precios > li{
   height: 420px;
   width: 100%;
   float: left;
-  padding-bottom: 30px;
-  margin: 30px 0px;
+}
+
+.mapa h2{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Testimoniales */

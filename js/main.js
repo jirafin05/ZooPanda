@@ -7,15 +7,6 @@
 
   document.addEventListener('DOMContentLoaded', function(){
 
-    var map = L.map('mapa').setView([-26.773751, -60.430539], 17);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([-26.773751, -60.430539]).addTo(map)
-      .bindPopup('Calle 6 entre 41 y 43<br> Barrio San Martin.')
-      .openPopup();
 
     //Campos Datos Usuarios
 
